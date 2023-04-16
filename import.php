@@ -13,7 +13,7 @@ $modx->initialize('web');
 include 'functions.php';
 
 #Прасинг таблицы
-$str = file_get_contents('https://docs.google.com/spreadsheets/u/0/d/1Dm4MMBb14PVOxWXtRfB0RylWhCwkawEcAJz6RvuZMIg/export?format=tsv&id=1Dm4MMBb14PVOxWXtRfB0RylWhCwkawEcAJz6RvuZMIg&gid=0');
+$str = file_get_contents('ссылка_на_гугл_док');
 $str = str_replace("\t", '|', $str);
 file_put_contents('list.csv', $str);
 
